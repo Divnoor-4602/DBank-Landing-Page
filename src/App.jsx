@@ -6,7 +6,7 @@ const App = () => {
     // Website container
     <div className="bg-primary w-full overflow-hidden">
       {/* navbar container */}
-      <div className="text-white sm:px-16 px-6 w-full max-w-[1280px]">
+      <div className="text-white sm:px-16 px-6 w-full max-w-[1280px] ">
         <Navbar />
       </div>
 
@@ -16,13 +16,18 @@ const App = () => {
       </div>
 
       {/* statistics bank */}
-      <div className="flex flex-start sm:px-16 px-6 bg-primary">
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-16">
         <Stats />
       </div>
 
       {/* business */}
       <div className="flex flex-start sm:px-16 px-6 bg-primary">
         <Business />
+      </div>
+
+      {/* billings */}
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-16">
+        <Billing />
       </div>
     </div>
   );

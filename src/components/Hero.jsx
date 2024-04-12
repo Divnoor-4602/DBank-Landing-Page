@@ -2,6 +2,7 @@ import React from "react";
 import discount from "../assets/Discount.svg";
 import GetStarted from "./GetStarted.jsx";
 import robotHero from "../assets/robot.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       {/* hero container */}
       <section id="home" className="w-full">
         {/* text section hero */}
-        <div className="flex flex-col md:flex-row text-white font-poppins py-8 w-full justify-between items-center gap-8">
+        <div className="flex flex-col md:flex-row text-white font-poppins  w-full justify-between items-center gap-8">
           <div className="flex flex-col gap-8 items-center sm:items-start justify-center ">
             {/* payment badge */}
             <div className="flex items-center gap-2 bg-discount-gradient max-w-fit px-4 rounded-full py-1">
@@ -28,9 +29,9 @@ const Hero = () => {
                   <span className="text-gradient">Generation</span>
                 </p>
                 {/* get started button */}
-                <div className="sm:flex hidden md:mr-4 mr-0">
+                <motion.div className="sm:flex hidden md:mr-4 mr-0">
                   <GetStarted />
-                </div>
+                </motion.div>
               </div>
               {/* payment method text */}
               <div className="tracking-wide text-3xl sm:text-[52px] text-center sm:text-start font-semibold sm:leading-[72px]">
@@ -46,10 +47,19 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-2/3 md:w-1/2">
-            <img
+            <motion.img
               src={robotHero}
               alt="robot hero"
               className="w-[100%] h-[100%] relative z-10"
+              initial={{ y: 0 }}
+              animate={{
+                y: 25,
+              }}
+              transition={{
+                duration: 0.8,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
             />
 
             <div className="w-1/2 absolute pink__gradient -z-1 h-[35%] md:right-0 md:top-20 left-0 top-0 md:left-[50%]" />
