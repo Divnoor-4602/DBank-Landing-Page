@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Hero, Stats } from "./components";
+import { Navbar, Hero, Stats, Business } from "./components";
 
 const App = () => {
   return (
@@ -18,6 +18,11 @@ const App = () => {
       {/* statistics bank */}
       <div className="flex flex-start sm:px-16 px-6 bg-primary">
         <Stats />
+      </div>
+
+      {/* business */}
+      <div className="flex flex-start sm:px-16 px-6 bg-primary">
+        <Business />
       </div>
     </div>
   );

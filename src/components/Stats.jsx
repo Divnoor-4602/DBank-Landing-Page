@@ -13,9 +13,6 @@ const Stats = () => {
               <div className="uppercase text-[15px] text-gradient">
                 {stat.title}
               </div>
-              {stat.title != "Transaction" && (
-                <div className="text-sm hidden md:block">|</div>
-              )}
             </div>
           );
         })}

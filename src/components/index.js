@@ -8,8 +8,10 @@ import Hero from "./Hero.jsx";
 import Testimonals from "./Testimonials.jsx";
 import CTA from "./CTA.jsx";
 import Clients from "./Clients.jsx";
+import Business from "./Business.jsx";
 
 export {
+  Business,
   Navbar,
   Billing,
   Banking,

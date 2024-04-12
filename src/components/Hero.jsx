@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
 
             {/* subheading text */}
-            <div className="font-poppins text-sm max-w-[500px] mt-5 opacity-70">
+            <div className="font-poppins text-sm max-w-[500px] mt-5 opacity-70 leading-[28px]">
               Our team of experts uses a methodology to identify the credit
               cards most likely to fit your needs. We examine annual percentage
               rates, annual fees.
