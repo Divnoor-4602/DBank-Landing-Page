@@ -35,26 +35,25 @@ const BusinessFeatureCard = ({ icon, text, subText }) => {
 const Business = () => {
   return (
     <>
-      <div className="py-16 font-poppins ">
-        <div className="flex flex-row  gap-40">
-          <div className="flex flex-col gap-12 w-1/2">
+      <div className="py-16 font-poppins relative ">
+        <div className="flex flex-col items-center  md:flex-row">
+          <div className="flex flex-col gap-8 items-center md:items-start w-5/6">
             {/* text side */}
-            <div className="tracking-wide text-white text-[36px] font-poppins font-semibold leading-12">
-              You do the business, <br /> we'll handle the money.
+            <div className="tracking-wide text-white text-3xl md:text-[36px] font-poppins font-semibold md:leading-[50px] text-center md:text-start">
+              You do the business, <br className="hidden md:block" /> we'll
+              handle the money.
             </div>
             {/* sub-text */}
-            <div className="text-white/70 text-sm leading-[28px]">
+            <div className="text-white/70 text-sm leading-[28px] w-3/4">
               With the right credit card, you can improve your financial life by
-              <br />
               building credit, earning rewards and saving money. But with
-              <br />
               hundreds of credit cards on the market.
             </div>
             {/* get started button */}
             <Button />
           </div>
           {/* features business */}
-          <div className="flex-col text-white space-y-8 w-1/2">
+          <div className="flex-col text-white space-y-8 ">
             <BusinessFeatureCard
               icon={Star}
               text="Rewards"
@@ -72,6 +71,8 @@ const Business = () => {
             />
           </div>
         </div>
+        {/* gradients */}
+        <div className="w-[30%] absolute pink__gradient -z-1 h-[35%] top-0 left-0 " />
       </div>
     </>
   );

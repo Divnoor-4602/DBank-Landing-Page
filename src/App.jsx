@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Hero, Stats, Business } from "./components";
+import { Navbar, Hero, Stats, Business, Billing } from "./components";
 
 const App = () => {
   return (
