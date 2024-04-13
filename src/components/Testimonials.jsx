@@ -35,7 +35,7 @@ const Testimonials = () => {
       {/* container */}
       <div className="w-full flex flex-col gap-6 relative">
         {/* text content */}
-        <div className="flex justify-between items-center w-full">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full gap-8 md:gap-0">
           <div className="tracking-wide text-white text-3xl md:text-[36px] font-poppins font-semibold md:leading-[50px] text-center md:text-start">
             What people are <br />
             saying about us

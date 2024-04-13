@@ -63,7 +63,7 @@ const App = () => {
       </div>
 
       {/* Footer now */}
-      <div className="flex flex-start sm:px-16 px-6 bg-primary py-12 sm:py-16">
+      <div className="flex flex-col gap-10 sm:px-16 px-6 bg-primary pt-12 pb-12 sm:pt-16 sm:pb-8">
         <Footer />
       </div>
     </div>

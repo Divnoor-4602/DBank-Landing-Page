@@ -5,12 +5,12 @@ const CTA = () => {
   return (
     <>
       <div className="w-full rounded-xl bg-black-gradient-2 p-16">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-col gap-4">
             <div className="tracking-wide text-white text-3xl md:text-[36px] font-poppins font-semibold md:leading-[50px] text-center md:text-start">
               Let’s try our service now!
             </div>
-            <div className="text-white/70 text-sm leading-[28px]">
+            <div className="text-white/70 text-sm leading-[28px] text-center md:text-start">
               Everything you need to accept card payments{" "}
               <br className="hidden md:block" />
               and grow your business anywhere on the planet.

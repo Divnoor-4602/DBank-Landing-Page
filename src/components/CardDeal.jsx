@@ -9,7 +9,7 @@ const CardDeal = () => {
       {/* billing container */}
       <div className="flex flex-col md:flex-row w-full font-poppins gap-20 items-center justify-between">
         {/* billing content */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 items-center md:items-start">
           <div className="tracking-wide text-white text-3xl md:text-[36px] font-poppins font-semibold md:leading-[50px] text-center md:text-start">
             Find a better card deal <br />
             in few easy steps.
