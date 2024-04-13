@@ -1,5 +1,17 @@
 import React from "react";
-import { Navbar, Hero, Stats, Business, Billing } from "./components";
+import {
+  Navbar,
+  Hero,
+  Stats,
+  Business,
+  Billing,
+  CardDeal,
+  Testimonals,
+  Clients,
+  CTA,
+  Footer,
+} from "./components";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -16,7 +28,7 @@ const App = () => {
       </div>
 
       {/* statistics bank */}
-      <div className="flex flex-start sm:px-16 px-6 bg-primary py-16">
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-12 sm:py-16">
         <Stats />
       </div>
 
@@ -26,8 +38,33 @@ const App = () => {
       </div>
 
       {/* billings */}
-      <div className="flex flex-start sm:px-16 px-6 bg-primary py-16">
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-12 sm:py-16">
         <Billing />
+      </div>
+
+      {/* Card Deal */}
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-12 sm:py-16">
+        <CardDeal />
+      </div>
+
+      {/* Feedback website */}
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-12 sm:py-16">
+        <Testimonials />
+      </div>
+
+      {/* Affiliated Clients */}
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-12 sm:py-16">
+        <Clients />
+      </div>
+
+      {/* Service try now */}
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-12 sm:py-16">
+        <CTA />
+      </div>
+
+      {/* Footer now */}
+      <div className="flex flex-start sm:px-16 px-6 bg-primary py-12 sm:py-16">
+        <Footer />
       </div>
     </div>
   );

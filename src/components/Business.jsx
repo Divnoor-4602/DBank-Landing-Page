@@ -35,8 +35,8 @@ const BusinessFeatureCard = ({ icon, text, subText }) => {
 const Business = () => {
   return (
     <>
-      <div className="py-16 font-poppins relative ">
-        <div className="flex flex-col items-center  md:flex-row">
+      <div className="py-12 sm:py-16 font-poppins relative ">
+        <div className="flex flex-col items-center md:flex-row gap-8 md:gap-0">
           <div className="flex flex-col gap-8 items-center md:items-start w-5/6">
             {/* text side */}
             <div className="tracking-wide text-white text-3xl md:text-[36px] font-poppins font-semibold md:leading-[50px] text-center md:text-start">

@@ -59,6 +59,7 @@ const Hero = () => {
                 duration: 0.8,
                 repeat: Infinity,
                 repeatType: "reverse",
+                ease: "linear",
               }}
             />
 

@@ -13,16 +13,17 @@ const Billing = () => {
         <motion.img
           initial={{ y: 0 }}
           animate={{
-            y: 15,
+            y: 20,
           }}
           transition={{
             duration: 0.8,
             repeat: Infinity,
             repeatType: "reverse",
+            ease: "linear",
           }}
           src={Bill}
           alt="bill png"
-          className="object-contain w-[50%]"
+          className="object-contain w-[70%] md:w-[50%]"
         />
 
         {/* billing content */}
@@ -35,11 +36,12 @@ const Billing = () => {
 
           <div className="text-white/70 text-sm text-justify">
             Elit enim sed massa etiam. Mauris eu adipiscing
-            <br /> ultrices ametodio aenean neque. Fusce ipsum orci rhoncus
-            <br />
+            <br className="hidden md:block" /> ultrices ametodio aenean neque.
+            Fusce ipsum orci rhoncus
+            <br className="hidden md:block" />
             aliporttitor integer platea placerat.
           </div>
-          <div className="flex gap-8">
+          <div className="flex gap-8 justify-center md:justify-start w-full">
             <img
               src={Apple}
               alt="download from apple"
