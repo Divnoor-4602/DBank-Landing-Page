@@ -22,7 +22,13 @@ const Footer = () => {
           return (
             <div className="text-white" key={footerLink.title}>
               <div className="flex flex-col gap-2">
-                <div className="mb-2">{footerLink.title}</div>
+                <div
+                  className={`mb-2 ${
+                    footerLink.title === "Community" && "mr-[1.5rem]"
+                  }`}
+                >
+                  {footerLink.title}
+                </div>
                 {footerLink.links.map((link) => {
                   return (
                     <div
